@@ -132,6 +132,10 @@ button:hover{
         width: 100%;
     }
 
+    h1{
+        font-size: 1.75rem;
+    }
+
     .card-container{
         width: 28.125rem;
         height: 43.5625rem;
