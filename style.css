@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    margin: 0;
+    background-color: #E0E8FF;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main > img{
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    width: 0;
+}
+
+.card-container{
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    height: 80vh;
+}
+
+.card-container > img{
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    height: 100%;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 1.375rem;
+    margin: 0;
+}
+
+.content > p {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #717FA6;
+    line-height: 1.5625rem;
+    margin-top: 0;
+}
+
+.plan{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F7F9FF;
+    border-radius: 15px;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.plan > img{
+    align-self: center;
+}
+
+h2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.plan-price > p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #717FA6;
+}
+
+.plan > a{
+    color: #382AE1;
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+
+.plan > a:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+
+button{
+    width: 100%;
+    height: 3.125rem;
+    background-color: #382AE1;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 20px 40px -20px rgb(31, 39, 73);
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #766CF1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.content > a{
+    color: #717FA6;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 0.9375rem;
+}
+
+.content > a:hover{
+    color: #1F2E55;
+}
+
+@media only screen and (min-width:700px) {
+    main > img{
+        visibility: visible;
+        width: 100%;
+    }
+
+    .card-container{
+        width: 28.125rem;
+        height: 43.5625rem;
+    }
+
+    .content{
+        padding: 3rem;
+    }
+
+    .content > p{
+        font-size: 1rem;
+    }
+
+    .plan > img{
+        margin-left: -30px;
+    }
+
+    .plan-price{
+        margin-left: -50px;
+    }
+}
+
